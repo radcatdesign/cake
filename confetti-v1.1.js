@@ -157,7 +157,7 @@ ConfettiCannon = function () {
 
         amount, angle, velocity, x, y) {
             var i = 0;
-            while (i < amount) {if (window.CP.shouldStopExecution(0)) break;
+            while (i < amount) {
                 // sprite
                 var r = _.random(4, 6) * this.dpr;
                 var d = _.random(15, 25) * this.dpr;
@@ -191,7 +191,7 @@ ConfettiCannon = function () {
                 this.confettiSpriteIds.push(id);
                 this.tweenConfettiParticle(id);
                 i++;
-            }window.CP.exitedLoop(0);
+            }
         } }, { key: 'tweenConfettiParticle', value: function tweenConfettiParticle(
 
         id) {var _this = this;
